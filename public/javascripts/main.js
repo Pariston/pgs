@@ -8,7 +8,7 @@ $().ready(function() {
       userInfo                    = $("#userInfo").hide(),
       counter                     = 0; //zmienną kontroluję numer "okna". 0 - pierwsze okno
 
-  var tab2 = [
+  var steps = [
       {
         task: 'Podaj imie',
         input: '<input type="text" id="userName" placeholder="Podaj imię..." class="taskInput" />',
@@ -41,9 +41,9 @@ $().ready(function() {
       $(this).remove();
     });
 
-    for(var i = 0; i < tab2.length; i++) {
-      if(i === counter) $("#leftMenu").append("<li class='active'>" + tab2[i].task + "</li>");
-      else $("#leftMenu").append("<li>" + tab2[i].task + "</li>");
+    for(var i = 0; i < steps.length; i++) {
+      if(i === counter) $("#leftMenu").append("<li class='active'>" + steps[i].task + "</li>");
+      else $("#leftMenu").append("<li>" + steps[i].task + "</li>");
     }
   };
 
@@ -51,8 +51,8 @@ $().ready(function() {
   setWindow = function() {
     $("#userFormContainer form div.formContent").replaceWith(
       "<div class='formContent'>" +
-      "<p class='task'>" + tab2[counter].task + "</p>" +
-      "<p>" + tab2[counter].input + "</p>" +
+      "<p class='task'>" + steps[counter].task + "</p>" +
+      "<p>" + steps[counter].input + "</p>" +
       "</div>"
     );
   };
@@ -139,7 +139,7 @@ $().ready(function() {
       nextButton.attr('disabled', false);
       prevButton.attr('disabled', true);
     }
-    else if(counter === tab2.length - 1) {
+    else if(counter === steps.length - 1) {
       showUserInfoButton.show();
       prevButton.attr('disabled', false);
       nextButton.hide();
@@ -185,13 +185,13 @@ $().ready(function() {
 
     $(element).each(function() {
       if(!$(this).val()) {
-        if(tab2[counter].required) {
+        if(steps[counter].required) {
           errorMessage.text("Pole jest wymagane.");
           errorMessage.show();
           errorCounter++;
         }
       }
-      else if(!tab2[counter].regex.test($(this).val())) {
+      else if(!steps[counter].regex.test($(this).val())) {
         $(this).addClass("inputError");
         errorMessage.text("Użyto niedozwolonych znakow.");
         errorMessage.show();
