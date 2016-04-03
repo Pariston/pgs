@@ -2,7 +2,7 @@
 <img src="http://i.imgur.com/owebFYq.jpg" title="A tak o!" />
 Kod został napisany w taki sposób, żeby mógł być w sposób prosty rozszerzalny. Żeby dodać nowe pola wystarczą 3 kroki, a resztę program zrobi za nas. Pozwoliłem sobie dodać również rzeczy, które nie pochodziły wprost z treści zadania tj. walidatory, ulepszenia graficzne i tak dalej.
 # Jak uruchomić?
-W konsoli Node należy wykonać 2 komendy:
+W konsoli Node należy wykonać 3 komendy:
 <ul>
   <li>npm install</li>
   <li>bower install</li>
