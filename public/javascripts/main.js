@@ -89,6 +89,7 @@ $().ready(function() {
   };
 
   $("#next").click(function() {
+    //sprawdzam czy pole tekstowe przechodzi tekst walidatorow
     if(!hasErrors("#userFormContainer form p input[type='text']")) {
       //w innym przypadku zwiększam wartość licznika i wywołuję metodę checkCounter, ktora aktualizuje
       //dane w obiekcie "user"
