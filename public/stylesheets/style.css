@@ -1,0 +1,204 @@
+body {
+  background: #1f1f1f;
+  font: 13px Century Gothic,arial,sans-serif;
+  background: #1f1f1f url("/images/bgbw.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eaeaea;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul#leftMenu li {
+  background: #1f1f1f;
+  margin: -10px -20px 10px -20px;
+  padding: 10px 15px;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#errorMessage {
+  padding: 10px 30px 15px;
+  margin-top: -15px;
+  color: #f76a6a;
+}
+
+#showUserInfoButton, #errorMessage {
+  display: none;
+}
+
+#userNameContainer, #userSurnameContainer, #userAddressContainer, #userPhoneContainer {
+  display: none;
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+#userFormContainer {
+  margin-left: 300px;
+  border-left: 1px solid #292929;
+  overflow: hidden;
+}
+
+#userFormContainer form {
+  padding: 20px 30px;
+}
+
+#userInfo {
+  border-radius: 4px;
+  border: 3px dashed #62E1FF;
+  font-size: 17px;
+  background: #1f1f1f;
+  padding: 20px 50px;
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -212.5px;
+  margin-top: -127.5px;
+}
+
+#userInfo ul li {
+  margin-bottom: 15px;
+}
+
+ul.left li {
+  font-weight: bold;
+  text-align: right;
+}
+
+ul.right li {
+  text-align: center;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+.hide {
+  display: none;
+}
+
+#userInfo h1 {
+  background: #2f2f2f;
+  padding: 15px 50px;
+  margin: -20px -50px 20px;
+}
+
+#next, #showUserInfoButton {
+  margin-left: -5px;
+  border-left: 1px solid #292929 !important;
+}
+
+#prev, #next, #showUserInfoButton {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #eaeaea;
+  border: 0;
+  border-top: 1px solid #2f2f2f;
+  width: 50%;
+  padding: 15px 35px;
+  width: 50%;
+  padding: 15px 35px;
+}
+
+#prev:hover, #next:hover, #showUserInfoButton:hover {
+  cursor: pointer;
+}
+
+#prev:hover {
+  background: #636363 url("/images/prevhover.png") no-repeat;
+  background-position: left 20px top 15px;
+}
+
+#next:hover {
+  background: #636363 url("/images/nexthover.png") no-repeat;
+  background-position: right 20px top 15px;
+}
+
+#showUserInfoButton:hover {
+  background: #636363 url("/images/nexthover.png") no-repeat;
+  background-position: right 20px top 15px;
+}
+
+.margin {
+  margin: 20px -30px -33px;
+}
+
+.active {
+  color: #62E1FF;
+  font-weight: bold;
+}
+
+.task {
+  background: #2f2f2f;
+  margin: -20px -30px 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.taskInput {
+  font-size: 25px;
+  padding: 20px 30px;
+  border-radius: 4px;
+  background: transparent;
+  border: 0;
+  font-style: italic;
+  color: #eaeaea;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+#prev {
+  background: #2f2f2f url("/images/prev.png") no-repeat;
+  background-position: left 20px top 15px;
+}
+
+#next, #showUserInfoButton {
+  background: #2f2f2f url("/images/next.png") no-repeat;
+  background-position: right 20px top 15px;
+}
+
+#leftMenu {
+  background: #1B1B1B;
+  width: 260px;
+  margin-top: 53px;
+  padding: 10px 20px;
+  position: left;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+
+.header {
+  font-size: 20px;
+  padding: 15px 20px 15px 60px;
+  background: #636363 url("/images/account2.png") no-repeat 20px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -73px;
+  margin-left: -361.5px;
+  background: #1f1f1f;
+  display: inline-block;
+  border-radius: 4px;
+  border: 5px solid #383838;
+}

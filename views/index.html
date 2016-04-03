@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>PGS Software</title>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Etap prawdopodobnie rejestracji ;-)</div>
+      <ul id="leftMenu"></ul>
+      <div id="userFormContainer">
+        <form>
+        <div class="formContent"></div>
+        <div class="margin">
+          <div id="errorMessage"></div>
+          <input type="submit" id="prev" value="Poprzedni" disabled />
+          <input type="submit" id="next" value="Następny" />
+          <input type="submit" id="showUserInfoButton" value="Zakończ" />
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Div zawierający wszystkie informacje o użytkowniku. -->
+    <div id="userInfo"></div>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>
