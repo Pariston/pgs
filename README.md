@@ -18,4 +18,7 @@ Struktura została wygenerowana automatycznie za pomocą komendy express modułu
   <li><b>/views/</b> - tutaj znajduje się plik index.html</li>
   <li><b>/public/javascripts/</b> - tutaj znajduje się plik main.js</li>
 </ul>
+
+-----------------------------------------------------------------------------------
+Do napisania aplikacji użyłem języka JavaScript wraz z frameworkiem jQuery. Uznałem, że nie ma większego sensu używać tutaj Angulara 2, o którym wspominałem w CV głównie z tego powodu, że piszę w nim za pomocą Typescriptu.
   
